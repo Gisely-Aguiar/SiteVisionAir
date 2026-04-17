@@ -1,6 +1,11 @@
 import { CheckCircle2, ArrowRight, Package, Database, Network, Leaf, Boxes } from "lucide-react";
 import { motion } from "motion/react";
+const CONTATO = {
+  telefone: "551143010636",
+  mensagem: "Olá, venho através do site da VisionAir e gostaria de falar com um especialista."
+};
 
+const WHATSAPP_LINK = `https://wa.me/${CONTATO.telefone}?text=${encodeURIComponent(CONTATO.mensagem)}`;
 export function Products() {
   const products = [
     {
@@ -176,9 +181,14 @@ export function Products() {
             <p className="text-gray-600 mb-2">
               Nossos especialistas avaliam sua operação e recomendam a melhor combinação
             </p>
-            <button className="bg-gradient-to-r from-[#3A8DCC] to-[#2FA84F] text-white px-8 py-3 rounded-xl hover:shadow-xl transition-all">
+            <a
+              href={WHATSAPP_LINK}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-block mt-6 bg-gradient-to-r from-[#3A8DCC] to-[#2FA84F] text-white px-6 py-2.5 rounded-lg text-sm hover:shadow-lg transition-all"
+            >
               Falar com especialista
-            </button>
+            </a>
           </div>
         </motion.div>
       </div>

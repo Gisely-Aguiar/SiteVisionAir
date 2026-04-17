@@ -8,6 +8,12 @@ export function Footer() {
       element.scrollIntoView({ behavior: "smooth" });
     }
   };
+  const CONTATO = {
+  telefone: "551143010636",
+  mensagem: "Olá, venho através do site da VisionAir e gostaria de falar com um especialista."
+};
+
+const WHATSAPP_LINK = `https://wa.me/${CONTATO.telefone}?text=${encodeURIComponent(CONTATO.mensagem)}`;
 
   return (
     <footer className="bg-gray-900 text-white">
@@ -122,12 +128,17 @@ export function Footer() {
               </li>
               <li className="flex items-start gap-2 text-gray-400 text-sm">
                 <MapPin className="w-4 h-4 mt-0.5 flex-shrink-0" />
-                <span>São Paulo, SP - Brasil</span>
+                <span>Rua Vaticano 121, Cotia SP - Brasil</span>
               </li>
             </ul>
-            <button className="mt-6 bg-gradient-to-r from-[#3A8DCC] to-[#2FA84F] text-white px-6 py-2.5 rounded-lg text-sm hover:shadow-lg transition-all">
+            <a
+              href={WHATSAPP_LINK}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-block mt-6 bg-gradient-to-r from-[#3A8DCC] to-[#2FA84F] text-white px-6 py-2.5 rounded-lg text-sm hover:shadow-lg transition-all"
+            >
               Falar com especialista
-            </button>
+            </a>
           </div>
         </div>
 

@@ -1,6 +1,12 @@
 import { Award, Package, CheckCircle2, TrendingUp, Puzzle } from "lucide-react";
 import { motion } from "motion/react";
 
+const CONTATO = {
+  telefone: "551143010636",
+  mensagem: "Olá, venho através do site da VisionAir e gostaria de agendar uma reunião.",
+  };
+
+  const WHATSAPP_LINK = `https://wa.me/${CONTATO.telefone}?text=${encodeURIComponent(CONTATO.mensagem)}`;
 export function Differentials() {
   const differentials = [
     {
@@ -118,13 +124,18 @@ export function Differentials() {
                 Por isso, nossa abordagem é sempre baseada em resultados reais,
                 demonstrados no ambiente do cliente antes de qualquer investimento
               </p>
+
+              {/* implementar futuramente - pendente */}
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <button className="bg-white text-[#3A8DCC] px-8 py-4 rounded-xl font-semibold hover:shadow-2xl transition-all">
                   Conhecer casos de sucesso
                 </button>
-                <button className="bg-white/10 backdrop-blur-sm text-white border-2 border-white/30 px-8 py-4 rounded-xl font-semibold hover:bg-white/20 transition-all">
-                  Agendar reunião
-                </button>
+              <button
+                onClick={() => window.open(WHATSAPP_LINK, "_blank")}
+                className="cursor-pointer bg-white/10 border-2 border-gray-200 text-white px-8 py-4 rounded-xl hover:border-[#3A8DCC] hover:text-[#3A8DCC] transition-all"
+              >
+                Agendar reunião
+              </button>
               </div>
             </div>
           </div>
@@ -140,7 +151,7 @@ export function Differentials() {
         >
           <div className="text-center">
             <div className="text-4xl font-bold bg-gradient-to-r from-[#3A8DCC] to-[#2FA84F] bg-clip-text text-transparent mb-2">
-              +500
+              +50
             </div>
             <div className="text-sm text-gray-600">Projetos implantados</div>
           </div>
@@ -152,7 +163,7 @@ export function Differentials() {
           </div>
           <div className="text-center">
             <div className="text-4xl font-bold bg-gradient-to-r from-[#3A8DCC] to-[#2FA84F] bg-clip-text text-transparent mb-2">
-              +15
+              +9
             </div>
             <div className="text-sm text-gray-600">Anos de experiência</div>
           </div>

@@ -8,6 +8,7 @@ import { HowItWorks } from "./components/HowItWorks";
 import { Differentials } from "./components/Differentials";
 import { FinalCTA } from "./components/FinalCTA";
 import { Footer } from "./components/Footer";
+import  WhatsappButton  from "./components/ui/whatsapp";
 
 export default function App() {
   return (
@@ -21,6 +22,7 @@ export default function App() {
         <Products />
         <HowItWorks />
         <Differentials />
+        <WhatsappButton />
         <FinalCTA />
       </main>
       <Footer />

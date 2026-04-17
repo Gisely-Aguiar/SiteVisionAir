@@ -2,6 +2,12 @@ import { ArrowRight, CheckCircle, Flashlight } from "lucide-react";
 import { motion } from "motion/react";
 import { Zap, Target, Rocket } from 'iconest-react';
 
+const CONTATO = {
+  telefone: "551143010636",
+  mensagem: "Olá, venho através do site da VisionAir e gostaria de agendar uma reunião.",
+  };
+
+  const WHATSAPP_LINK = `https://wa.me/${CONTATO.telefone}?text=${encodeURIComponent(CONTATO.mensagem)}`;
 
 export function FinalCTA() {
   return (
@@ -64,7 +70,10 @@ export function FinalCTA() {
                     Solicitar diagnóstico
                     <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
                   </button>
-                  <button className="bg-white/10 backdrop-blur-sm text-white border-2 border-white/30 px-10 py-5 rounded-xl font-semibold hover:bg-white/20 transition-all text-lg">
+                  <button
+                    onClick={() => window.open(WHATSAPP_LINK, "_blank")}
+                    className="cursor-pointer bg-white/10 border-2 border-gray-200 text-white px-8 py-4 rounded-xl hover:border-[#3A8DCC] hover:text-[#3A8DCC] transition-all"
+                  >
                     Agendar reunião
                   </button>
                 </div>

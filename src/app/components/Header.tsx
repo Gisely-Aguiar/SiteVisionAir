@@ -12,6 +12,12 @@ export function Header() {
       setMobileMenuOpen(false);
     }
   };
+  const CONTATO = {
+  telefone: "551143010636",
+  mensagem: "Olá, venho através do site da VisionAir e gostaria de falar com um especialista."
+  };
+
+  const WHATSAPP_LINK = `https://wa.me/${CONTATO.telefone}?text=${encodeURIComponent(CONTATO.mensagem)}`;
 
   return (
     <header className="fixed top-0 left-0 right-0 bg-white/95 backdrop-blur-sm z-50 border-b border-gray-100">
@@ -74,9 +80,14 @@ export function Header() {
           </nav>
 
           {/* CTA Button */}
-          <button className="hidden md:block bg-gradient-to-r from-[#3A8DCC] to-[#2FA84F] text-white px-6 py-2.5 rounded-lg hover:shadow-lg transition-shadow">
-            Falar com especialista
-          </button>
+          <a
+              href={WHATSAPP_LINK}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-block mt-6 bg-gradient-to-r from-[#3A8DCC] to-[#2FA84F] text-white px-6 py-2.5 rounded-lg text-sm hover:shadow-lg transition-all"
+            >
+              Falar com especialista
+            </a>
 
           {/* Mobile Menu Button */}
           <button
@@ -126,9 +137,14 @@ export function Header() {
             >
               Contato
             </button>
-            <button className="bg-gradient-to-r from-[#3A8DCC] to-[#2FA84F] text-white px-6 py-2.5 rounded-lg hover:shadow-lg transition-shadow mt-2">
+            <a
+              href={WHATSAPP_LINK}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-block mt-6 bg-gradient-to-r from-[#3A8DCC] to-[#2FA84F] text-white px-6 py-2.5 rounded-lg text-sm hover:shadow-lg transition-all"
+            >
               Falar com especialista
-            </button>
+            </a>
           </nav>
         )}
       </div>

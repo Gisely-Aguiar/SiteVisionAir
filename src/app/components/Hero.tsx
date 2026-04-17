@@ -2,6 +2,14 @@ import { ArrowRight, Sparkles } from "lucide-react";
 import { motion } from "motion/react";
 import { ImageWithFallback } from "./figma/ImageWithFallback";
 
+const CONTATO = {
+  telefone: "551143010636",
+  mensagem: "Olá, venho através do site da VisionAir e gostaria de falar com um especialista.",
+  mensagemD: "Olá, venho através do site da VisionAir e gostaria de solicitar um diagnóstico."
+  };
+
+  const WHATSAPP_LINK = `https://wa.me/${CONTATO.telefone}?text=${encodeURIComponent(CONTATO.mensagem)}`;
+  const WHATSAPP_LINK_DIAGNOSTICO = `https://wa.me/${CONTATO.telefone}?text=${encodeURIComponent(CONTATO.mensagemD)}`;
 export function Hero() {
   return (
     <section id="home" className="pt-32 pb-20 bg-gradient-to-br from-white via-blue-50/30 to-green-50/20">
@@ -22,7 +30,7 @@ export function Hero() {
 
             <h1 className="text-5xl md:text-6xl font-bold text-gray-900 mb-6 leading-tight">
               Transformamos operações físicas em{" "}
-              <span className="bg-gradient-to-r from-[#3A8DCC] to-[#2FA84F] bg-clip-text text-transparent">
+              <span className="cursor-pointer bg-gradient-to-r from-[#3A8DCC] to-[#2FA84F] bg-clip-text text-transparent">
                 controle inteligente
               </span>
             </h1>
@@ -33,11 +41,17 @@ export function Hero() {
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4">
-              <button className="bg-gradient-to-r from-[#3A8DCC] to-[#2FA84F] text-white px-8 py-4 rounded-xl hover:shadow-xl transition-all flex items-center justify-center gap-2 group">
+              <button
+                onClick={() => window.open(WHATSAPP_LINK_DIAGNOSTICO, "_blank")}
+                className="cursor-pointer bg-gradient-to-r from-[#3A8DCC] to-[#2FA84F] text-white px-8 py-4 rounded-xl hover:shadow-xl transition-all flex items-center justify-center gap-2 group"
+              >
                 Solicitar diagnóstico
                 <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
               </button>
-              <button className="bg-white border-2 border-gray-200 text-gray-700 px-8 py-4 rounded-xl hover:border-[#3A8DCC] hover:text-[#3A8DCC] transition-all">
+              <button
+                onClick={() => window.open(WHATSAPP_LINK, "_blank")}
+                className="cursor-pointer bg-white border-2 border-gray-200 text-gray-700 px-8 py-4 rounded-xl hover:border-[#3A8DCC] hover:text-[#3A8DCC] transition-all"
+              >
                 Falar com especialista
               </button>
             </div>
