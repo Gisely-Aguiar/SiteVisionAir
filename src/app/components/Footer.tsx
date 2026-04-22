@@ -33,7 +33,7 @@ const WHATSAPP_LINK = `https://wa.me/${CONTATO.telefone}?text=${encodeURICompone
               Especialistas em RFID UHF e automação operacional. Transformamos
               operações físicas em controle inteligente.
             </p>
-            <div className="flex gap-3">
+            {/* <div className="flex gap-3">
               <a
                 href="#"
                 className="w-9 h-9 bg-white/5 hover:bg-white/10 rounded-lg flex items-center justify-center transition-colors"
@@ -52,7 +52,7 @@ const WHATSAPP_LINK = `https://wa.me/${CONTATO.telefone}?text=${encodeURICompone
               >
                 <Facebook className="w-4 h-4" />
               </a>
-            </div>
+            </div> */}
           </div>
 
           {/* Menu Links */}

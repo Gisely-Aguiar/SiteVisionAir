@@ -127,15 +127,15 @@ export function Differentials() {
 
               {/* implementar futuramente - pendente */}
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                <button className="bg-white text-[#3A8DCC] px-8 py-4 rounded-xl font-semibold hover:shadow-2xl transition-all">
+                {/* <button className="bg-white text-[#3A8DCC] px-8 py-4 rounded-xl font-semibold hover:shadow-2xl transition-all">
                   Conhecer casos de sucesso
+                </button> */}
+                <button
+                  onClick={() => window.open(WHATSAPP_LINK, "_blank")}
+                  className="cursor-pointer bg-white/10 border-2 border-gray-200 text-white px-8 py-4 rounded-xl hover:border-[#3A8DCC] hover:text-[#3A8DCC] transition-all"
+                >
+                  Agendar reunião
                 </button>
-              <button
-                onClick={() => window.open(WHATSAPP_LINK, "_blank")}
-                className="cursor-pointer bg-white/10 border-2 border-gray-200 text-white px-8 py-4 rounded-xl hover:border-[#3A8DCC] hover:text-[#3A8DCC] transition-all"
-              >
-                Agendar reunião
-              </button>
               </div>
             </div>
           </div>
