@@ -207,9 +207,15 @@ export function HowItWorks() {
               Com o Pré-Piloto VisionAir, você vê a solução funcionando no seu
               ambiente antes de qualquer compromisso
             </p>
-            <button className="bg-gradient-to-r from-[#3A8DCC] to-[#2FA84F] text-white px-8 py-3 rounded-xl hover:shadow-xl transition-all mt-2">
-              Agendar Pré-Piloto
-            </button>
+            <a
+              href="https://wa.me/551143010636?text=Ol%C3%A1%2C%20venho%20atrav%C3%A9s%20do%20site%20da%20VisionAir%20e%20gostaria%20de%20agendar%20um%20pr%C3%A9%20piloto."
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <button className="bg-gradient-to-r from-[#3A8DCC] to-[#2FA84F] text-white px-8 py-3 rounded-xl hover:shadow-xl transition-all mt-2 cursor-pointer">
+                Agendar Pré-Piloto
+              </button>
+            </a>
           </div>
         </motion.div>
       </div>
