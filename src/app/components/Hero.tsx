@@ -63,7 +63,7 @@ export function Hero() {
                 <div className="text-sm text-gray-600">Mais rápido</div>
               </div>
               <div>
-                <div className="text-3xl font-bold text-[#2FA84F] mb-1">95%</div>
+                <div className="text-3xl font-bold text-[#2FA84F] mb-1">99%</div>
                 <div className="text-sm text-gray-600">Acuracidade</div>
               </div>
               <div>
@@ -101,7 +101,7 @@ export function Hero() {
                   <Sparkles className="w-6 h-6 text-white" />
                 </div>
                 <div>
-                  <div className="text-2xl font-bold text-gray-900">+500</div>
+                  <div className="text-2xl font-bold text-gray-900">+20</div>
                   <div className="text-sm text-gray-600">Projetos implantados</div>
                 </div>
               </div>

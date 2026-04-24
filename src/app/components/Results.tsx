@@ -68,7 +68,7 @@ Aguardo retorno.`
     },
     {
       icon: Target,
-      title: "Acuracidade acima de 95%",
+      title: "Acuracidade acima de 99%",
       description: "Eliminação de erros humanos na contagem",
       color: "from-[#2FA84F] to-green-600",
     },
@@ -176,6 +176,7 @@ Aguardo retorno.`
                   <option value="">Solução</option>
                   <option value="SmartFactory">SmartFactory</option>
                   <option value="AdvTrackOne">AdvTrackOne</option>
+                  <option value="AdvTrackOne">Não sei ainda</option>
                 </select>
 
                 <input type="date" name="data" onChange={handleChange} className="w-full border p-3 rounded-lg" />

@@ -151,7 +151,7 @@ export function Differentials() {
         >
           <div className="text-center">
             <div className="text-4xl font-bold bg-gradient-to-r from-[#3A8DCC] to-[#2FA84F] bg-clip-text text-transparent mb-2">
-              +50
+              +20
             </div>
             <div className="text-sm text-gray-600">Projetos implantados</div>
           </div>
@@ -167,12 +167,7 @@ export function Differentials() {
             </div>
             <div className="text-sm text-gray-600">Anos de experiência</div>
           </div>
-          <div className="text-center">
-            <div className="text-4xl font-bold bg-gradient-to-r from-[#3A8DCC] to-[#2FA84F] bg-clip-text text-transparent mb-2">
-              24/7
-            </div>
-            <div className="text-sm text-gray-600">Suporte técnico</div>
-          </div>
+          
         </motion.div>
       </div>
     </section>

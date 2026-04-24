@@ -69,6 +69,19 @@ export function Segments() {
       image: "https://images.unsplash.com/photo-1768796372362-05c256e61d8c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtYW51ZmFjdHVyaW5nJTIwcHJvZHVjdGlvbiUyMGxpbmV8ZW58MXx8fHwxNzc0ODY1NjA1fDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
       gradient: "from-orange-500 to-[#3A8DCC]",
     },
+    {
+      icon: Beer,
+      title: "Apontamento automático",
+      subtitle: "Produção monitorada em tempo real",
+      benefits: [
+        "Apontamento sem intervenção humana, uso de RFID",
+        "Cálculo automático de OEE",
+        "Monitoramento de produtividade",
+      ],
+      cta: "Monitoramento",
+      image: "https://images.unsplash.com/photo-1586528116022-aeda1613c63d?q=80&w=871&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      gradient: "from-[#3A8DCC] to-blue-600",
+    },
   ];
 
   return (

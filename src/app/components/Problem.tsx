@@ -25,7 +25,7 @@ export function Problem() {
     {
       icon: Eye,
       title: "Falta de visibilidade",
-      description: "Sem saber onde estão os ativos em tempo real",
+      description: "Sem saber onde estão os produtos",
     },
     {
       icon: Clock,
